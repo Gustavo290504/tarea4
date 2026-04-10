@@ -2,7 +2,6 @@ package com.example.myapplication.tarea4
 
 import com.example.myapplication.R
 
-// --- LISTAS DE DATOS CON NOMBRES DE RECURSOS DESCRIPTIVOS ---
 
 val listaCategorias = listOf(
     Categoria("Accesorios para coche", R.drawable.cat_coche),
