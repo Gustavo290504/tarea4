@@ -46,7 +46,7 @@ data class Producto(
 )
 
 @Composable
-fun PantallaView() {
+fun PantallaViews() {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = "menu") {
@@ -81,7 +81,6 @@ fun PantallaView() {
             }
 
             Column(Modifier.fillMaxSize()) {
-                // BOTÓN DE REGRESO
                 Button(
                     onClick = { navController.popBackStack() },
                     modifier = Modifier.padding(16.dp)
@@ -160,10 +159,8 @@ fun GridProductos(productos: List<Producto>) {
     }
 }
 
-
-// --- PREVIEW ---
 @Preview(showBackground = true)
 @Composable
 fun MostrarPantallaPreview() {
-    PantallaView()
+    PantallaViews()
 }
